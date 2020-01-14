@@ -10,6 +10,15 @@
   align-items: center;
 }
 
+.countdown .countdown-text-container {
+  height: 200px;
+}
+
+.countdown .countdown-text-container .text {
+  color: #ffffff;
+  font-size: 3em;
+}
+
 .countdown .countdown-col {
   width: 100%;
   color: #fff;

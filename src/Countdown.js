@@ -80,9 +80,9 @@ class Countdown extends Component {
 
     return (
       <div className="countdown">
-        <span style={{ height: 200 }}>
+        <span className="countdown-text-container">
           <span>
-              <span style={{ color: '#fff', fontSize: '3em' }}>Quanto tempo falta pra tattoo? 👽</span>
+              <span className="text">{this.props.text}</span>
           </span>
         </span>
 
@@ -122,11 +122,13 @@ class Countdown extends Component {
 }
 
 Countdown.propTypes = {
-  date: PropTypes.string.isRequired
+  date: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
 };
 
 Countdown.defaultProps = {
-  date: new Date()
+  date: new Date(),
+  text: 'Contagem regressiva para o juízo final'
 };
 
 export default Countdown;

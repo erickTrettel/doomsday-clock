@@ -5,7 +5,7 @@ import Countdown from './Countdown';
 function App() {
   return (
     <div className="countdown-container">
-      <Countdown date="2020-01-25" />
+      <Countdown date="2020-01-25" text={'Quanto tempo falta pra tattoo? 👽'}/>
     </div>
   );
 }
