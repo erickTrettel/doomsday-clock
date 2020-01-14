@@ -79,44 +79,50 @@ class Countdown extends Component {
     const countDown = this.state;
 
     return (
-      <div className="countdown">
-        <span className="countdown-text-container">
-          <span>
-              <span className="text">{this.props.text}</span>
-          </span>
-        </span>
-
-        <div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
-          <span className="countdown-col">
-            <span className="countdown-col-element">
-                <strong>{this.addLeadingZeros(countDown.days)}</strong>
-                <span>{countDown.days === 1 ? 'Dia' : 'Dias'}</span>
-            </span>
-          </span>
-
-          <span className="countdown-col">
-            <span className="countdown-col-element">
-              <strong>{this.addLeadingZeros(countDown.hours)}</strong>
-              <span>Horas</span>
-            </span>
-          </span>
-
-
-          <span className="countdown-col">
-            <span className="countdown-col-element">
-              <strong>{this.addLeadingZeros(countDown.min)}</strong>
-              <span>Min</span>
-            </span>
-          </span>
-
-          <span className="countdown-col">
-            <span className="countdown-col-element">
-              <strong>{this.addLeadingZeros(countDown.sec)}</strong>
-              <span>Seg</span>
-            </span>
-          </span>
+      <>
+        <div className="animation-title">
+          Quanto tempo falta pra tattoo?
         </div>
-      </div>
+
+        <div className="countdown">
+          <span className="countdown-text-container">
+            <span>
+                <span className="text">{this.props.text}</span>
+            </span>
+          </span>
+
+          <div style={{ display: 'flex', flexDirection: 'row', width: '100%' }}>
+            <span className="countdown-col">
+              <span className="countdown-col-element">
+                  <strong>{this.addLeadingZeros(countDown.days)}</strong>
+                  <span>{countDown.days === 1 ? 'Dia' : 'Dias'}</span>
+              </span>
+            </span>
+
+            <span className="countdown-col">
+              <span className="countdown-col-element">
+                <strong>{this.addLeadingZeros(countDown.hours)}</strong>
+                <span>Horas</span>
+              </span>
+            </span>
+
+
+            <span className="countdown-col">
+              <span className="countdown-col-element">
+                <strong>{this.addLeadingZeros(countDown.min)}</strong>
+                <span>Min</span>
+              </span>
+            </span>
+
+            <span className="countdown-col">
+              <span className="countdown-col-element">
+                <strong>{this.addLeadingZeros(countDown.sec)}</strong>
+                <span>Seg</span>
+              </span>
+            </span>
+          </div>
+        </div>
+      </>
     );
   }
 }
