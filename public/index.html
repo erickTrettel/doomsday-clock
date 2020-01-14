@@ -40,6 +40,27 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCO6g3sG0sFW5ZzD0YI_j2gnQKLqd5RPCA",
+        authDomain: "doomsday-clock-19d29.firebaseapp.com",
+        databaseURL: "https://doomsday-clock-19d29.firebaseio.com",
+        projectId: "doomsday-clock-19d29",
+        storageBucket: "doomsday-clock-19d29.appspot.com",
+        messagingSenderId: "423687526122",
+        appId: "1:423687526122:web:e586ad4bd84e4457c7e993"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
     <script>
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
